@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
+.boogaloo-regular {
+  font-family: "Boogaloo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --primary: #464899;
+    --primary-light: #6a6ceb;
+    --primary-dark: #262753;
+    --secondary: #0c151c;
+    --accent: #9e9fdb;
+ 
+    --font-display: 'Boogaloo';
+    --font-primary: 'Boogaloo';
+
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 1.5rem;
+    --space-xl: 2rem;
+    --space-xxl: 3rem;
+
+    --radius-s: 0.375rem;
+    --radius-m: 0.5rem;
+    --radius-l: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-xxl: 1.5rem;
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    --transition-fast: 150ms ease-in-out;
+    --transition-normal: 300ms ease-in-out;
+    --transition-slow: 450ms ease-in-out;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-image: linear-gradient(var(--primary-light), var(--secondary));
+  border-bottom: 1px solid var(--primary-dark);
+  padding: var(--secondary) 0;
+  transition: var(--transition-normal);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xxl);
+}
