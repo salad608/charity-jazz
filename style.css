@@ -29,13 +29,13 @@
     --radius-xl: 1rem;
     --radius-xxl: 1.5rem;
 
-    html {
-        scroll-behavior: smooth;
-    }
-
     --transition-fast: 150ms ease-in-out;
     --transition-normal: 300ms ease-in-out;
     --transition-slow: 450ms ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 nav {
