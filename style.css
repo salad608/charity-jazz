@@ -34,6 +34,12 @@
     --transition-slow: 450ms ease-in-out;
 }
 
+body {
+  font-family: var(--font-primary), sans-serif;
+  background-color: radial-gradient(var(--primary), var(--primary-dark));
+  color: var(--primary-light);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -56,4 +62,18 @@ nav ul {
   justify-content: center;
   align-items: center;
   gap: var(--space-xxl);
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: var(--font-primary), sans-serif;
+  font-size: 1.1rem;
+  transition: color var(--transition-fast);
+}
+
+nav a:hover {
+  color: var(--primary-light);
 }
