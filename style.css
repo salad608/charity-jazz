@@ -46,7 +46,7 @@ nav {
   z-index: 1000;
   background-image: linear-gradient(var(--primary-light), var(--secondary));
   border-bottom: 1px solid var(--primary-dark);
-  padding: var(--secondary) 0;
+  padding: var(--space-m) 0;
   transition: var(--transition-normal);
 }
 
