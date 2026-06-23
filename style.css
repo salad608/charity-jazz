@@ -36,7 +36,7 @@
 
 body {
   font-family: var(--font-primary), sans-serif;
-  background-image: radial-gradient(var(--primary-light));
+  background-image: var(--primary-light);
   color: var(--secondary);
   padding-top: 3.5rem;
 }
