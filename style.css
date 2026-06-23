@@ -36,8 +36,9 @@
 
 body {
   font-family: var(--font-primary), sans-serif;
-  background-color: radial-gradient(var(--primary), var(--primary-dark));
+  background-image: radial-gradient(var(--primary), var(--primary-dark));
   color: var(--primary-light);
+  padding-top: 3.5rem;
 }
 
 html {
