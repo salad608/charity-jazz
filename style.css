@@ -120,3 +120,14 @@ nav a {
 nav a:hover {
   color: var(--primary-light);
 }
+
+/* disable right click img download */
+img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+img {
+  -webkit-touch-callout: none;
+}
