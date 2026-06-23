@@ -36,14 +36,42 @@
 
 body {
   font-family: var(--font-primary), sans-serif;
-  background-color: var(--primary-light);
+  background-color: var(--accent);
   color: var(--secondary);
   padding-top: 3.5rem;
+  min-height: 100vh;
+  margin: 0;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--accent);
+}
+
+a:link {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--primary-dark);
+}
+
+a:hover {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--primary-light);
+}
+
 
 nav {
   position: fixed;
