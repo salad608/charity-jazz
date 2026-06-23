@@ -48,6 +48,7 @@ body {
   color: var(--secondary);
   min-height: 100vh;
   margin: 0;
+  text-align: center;
 }
 
 body a:link {
