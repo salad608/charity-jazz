@@ -56,33 +56,41 @@ html, body {
   background-color: var(--accent);
 }
 
+body a:link {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+body a:visited {
+  color: var(--primary-dark);
+}
+
+body a:hover {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+body a:active {
+  color: var(--primary-light);
+}
+
 nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: var(--font-primary), sans-serif;
+  font-size: 1.1rem;
+  transition: color var(--transition-fast);
+}
+
+nav a:link {
   color: var(--accent);
   text-decoration: none;
 }
 
 nav a:hover {
   color: var(--primary-light);
-}
-
-body, a:link {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-body, a:visited {
-  color: var(--primary-dark);
-}
-
-body, a:hover {
-  color: var(--primary-light);
   text-decoration: none;
 }
-
-body, a:active {
-  color: var(--primary-light);
-}
-
 
 nav {
   position: fixed;
@@ -107,18 +115,7 @@ nav ul {
   gap: var(--space-xxl);
   margin: 0;
   padding: 0;
-}
-
-nav a {
-  color: var(--accent);
-  text-decoration: none;
-  font-family: var(--font-primary), sans-serif;
-  font-size: 1.1rem;
-  transition: color var(--transition-fast);
-}
-
-nav a:hover {
-  color: var(--primary-light);
+  width: 100%;
 }
 
 /* disable right click img download */
@@ -126,8 +123,5 @@ img {
   pointer-events: none;
   user-select: none;
   -webkit-user-drag: none;
-}
-
-img {
   -webkit-touch-callout: none;
 }
